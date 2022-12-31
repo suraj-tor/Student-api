@@ -38,6 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'student_app',
+    'routes_app',
+    'vehicle_app',
+    'driver_app'
 
 ]
 
@@ -77,8 +81,12 @@ WSGI_APPLICATION = 'student_api.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql', 
+        'NAME': 'student_db',
+        'USER': 'surajmahamuni',
+        'PASSWORD': 'surajmahamuni',
+        'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
+        'PORT': '3306',
     }
 }
 

@@ -1,1 +1,3 @@
 /stu-env/*
+*.pyc
+*/__pycache__/*
